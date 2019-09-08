@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: url(../images/Rockets-de-Houston-04.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+@import "./navbar";
+@import "./content";

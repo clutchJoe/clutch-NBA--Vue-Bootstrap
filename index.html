@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/font-awesome/5.10.0-12/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <title>clutch NBA</title>
+    </head>
+    <body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-transparent fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand h3 font-weight-bold">Clutch</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-compass mr-2"></i> Part-1</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a href="#" class="dropdown-item">Item-1</a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <li>
+                                    <a href="#" class="dropdown-item">Item-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-compass mr-2"></i> Part-2</a>
+						</li>
+						<li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-compass mr-2"></i> Part-3</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a href="#" class="dropdown-item">Item-1</a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <li>
+                                    <a href="#" class="dropdown-item">Item-2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Item-3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container main-content overflow-auto">
+        	<div class="row">
+        		<div class="col col-12 mt-5">
+                    <h1 class="text-center my-4">NBA PLAYOFF</h1>
+                </div>
+        	</div>
+
+        	<div class="row">
+				<articles v-for="item in datas" v-bind:item="item" v-bind:key="item.id" v-on:frontClick=""></articles>
+        	</div>
+        </div>	
+	
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="component.js"></script>
+    	<script src="index.js"></script>
+    </body>
+</html>

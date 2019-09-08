@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url(../images/Rockets-de-Houston-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.main-content {
+  background-position: center top;
+  background-size: cover;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  height: 100%;
+}
+
+.main-content::before {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  background-image: url(../images/Rockets-de-Houston-04.jpg);
+  background-position: center top;
+  background-size: cover;
+  -webkit-filter: blur(14px);
+  -moz-filter: blur(14px);
+  -ms-filter: blur(14px);
+  -o-filter: blur(14px);
+  filter: blur(14px);
+  content: ".";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -11;
+}
+
+.main-content::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.article {
+  width: 100%;
+  height: 27rem;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+}
+
+.details,
+.back-to {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
